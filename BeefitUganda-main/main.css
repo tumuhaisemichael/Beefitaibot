@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.hero-bg {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: pulse 10s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .bg-white {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .text-textColor,
+.dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode .bg-lightBg {
+    background-color: #333333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-bg {
+        background-attachment: scroll;
+    }
+
+    #chatbot iframe {
+        height: 80vh;
+        max-height: 600px;
+    }
+}
+
+/* Improve touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+    nav a, button {
+        padding: 0.75rem;
+        margin: 0.25rem;
+    }
+
+    #mobileMenuButton {
+        padding: 0.5rem;
+    }
+}
+

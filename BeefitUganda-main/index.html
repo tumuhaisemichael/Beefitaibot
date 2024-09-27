@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEEFIT Uganda - AI-Powered Beef Production Assistant</title>
+    <meta name="description" content="BEEFIT Uganda provides AI-powered assistance for smarter, more efficient beef farming. Get real-time support, insights, and guidance for your cattle production.">
+    <link rel="icon" href="fav_icon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+   
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beefitai.nita.go.ug/">
+    <meta property="og:title" content="BEEFIT Uganda - AI-Powered Beef Production Assistant">
+    <meta property="og:description" content="Revolutionize your beef production with AI-powered assistance. Get real-time support and insights for smarter farming in Uganda.">
+    <meta property="og:image" content="https://www.beefituganda.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://beefitai.nita.go.ug/">
+    <meta property="twitter:title" content="BEEFIT Uganda - AI-Powered Beef Production Assistant">
+    <meta property="twitter:description" content="Revolutionize your beef production with AI-powered assistance. Get real-time support and insights for smarter farming in Uganda.">
+    <meta property="twitter:image" content="https://www.beefituganda.com/twitter-image.jpg">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#AFC737',
+                        secondary: '#8B9E2B',
+                        accent: '#D6E681',
+                        textColor: '#333333',
+                        lightBg: '#F5F7E8',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-poppins text-textColor overflow-x-hidden">
+    <nav class="bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg fixed w-full z-10" aria-label="Main navigation">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-primary font-bold text-xl" aria-label="BEEFIT Uganda Home">BEEFIT Uganda</a>
+                <div class="hidden md:flex space-x-4" role="navigation">
+                    <a href="#home" class="text-secondary font-semibold hover:text-primary transition duration-300" aria-current="page">Home</a>
+                    <a href="#about" class="text-secondary font-semibold hover:text-primary transition duration-300">About</a>
+                    <a href="#features" class="text-secondary font-semibold hover:text-primary transition duration-300">Features</a>
+                    <a href="#chatbot" class="text-secondary font-semibold hover:text-primary transition duration-300">Chatbot</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle" class="text-secondary hover:text-primary transition duration-300" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                    <button id="mobileMenuButton" class="md:hidden text-secondary hover:text-primary transition duration-300" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white px-4 py-2" role="navigation" aria-label="Mobile navigation">
+            <a href="#home" class="block py-2 text-secondary font-semibold hover:text-primary transition duration-300">Home</a>
+            <a href="#about" class="block py-2 text-secondary font-semibold hover:text-primary transition duration-300">About</a>
+            <a href="#features" class="block py-2 text-secondary font-semibold hover:text-primary transition duration-300">Features</a>
+            <a href="#chatbot" class="block py-2 text-secondary font-semibold hover:text-primary transition duration-300">Chatbot</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg bg-gradient-to-br from-primary to-secondary min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 shadow-text">Revolutionize Your Beef Production</h1>
+            <p class="text-xl md:text-2xl text-white opacity-80 mb-8 shadow-text">BEEFIT: Your AI-powered assistant for smarter, more efficient beef farming in Uganda</p>
+            <a href="#chatbot" class="bg-accent text-textColor font-semibold py-3 px-8 rounded-full hover:bg-primary hover:text-white transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">Experience BEEFIT Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-8">About BEEFIT</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-center leading-relaxed">BEEFIT is a cutting-edge AI assistant designed to empower Ugandan beef producers. By harnessing the power of advanced natural language processing and machine learning, we provide real-time support, insights, and guidance to farmers, ranchers, and industry professionals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-lightBg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Powerful Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-heartbeat text-4xl text-primary mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Disease Control</h4>
+                    <p>Access comprehensive information on cattle diseases, symptoms, prevention, and treatment options.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-chart-line text-4xl text-primary mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Market Insights</h4>
+                    <p>Stay updated with real-time market information, prices, and trends in the Ugandan beef industry.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-coins text-4xl text-primary mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Financial Support</h4>
+                    <p>Discover opportunities for loans, SACCOs, and financial assistance to grow your beef production business.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-leaf text-4xl text-primary mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Nutrition Guidance</h4>
+                    <p>Optimize your cattle's diet with expert advice on fodder crops and specialized feed options.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-dna text-4xl text-primary mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Breed Expertise</h4>
+                    <p>Learn about various cattle breeds, their characteristics, and best management practices.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-clock text-4xl text-primary mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">24/7 Availability</h4>
+                    <p>Get instant support anytime, anywhere, ensuring you never miss critical information or assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="chatbotContainer" aria-live="polite">
+        <section id="chatbot" class="py-16 bg-lightBg">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Experience BEEFIT</h2>
+                <div class="flex items-center justify-center">
+                    <div class="w-full max-w-2xl h-[500px] md:h-[600px] lg:h-[700px] rounded-xl overflow-hidden shadow-xl">
+                        <iframe
+                            class="w-full h-full border-none"
+                            srcdoc="
+                            <body style='margin:0; height:50vh; overflow: hidden;'>
+                            <script src='https://cdn.botpress.cloud/webchat/v1/inject.js'></script>
+                            <script>
+                              window.botpressWebChat.init({
+                                  'composerPlaceholder': 'CHAT WITH US',
+                                  'botConversationDescription': 'this is an AI assistant to beef production',
+                                  'botId': 'c5396aa5-94af-438e-a34a-9d120b349844',
+                                  'hostUrl': 'https://cdn.botpress.cloud/webchat/v1',
+                                  'messagingUrl': 'https://messaging.botpress.cloud',
+                                  'clientId': 'c5396aa5-94af-438e-a34a-9d120b349844',
+                                  'webhookId': '2ab83e5f-7287-461a-b68b-97c1cfeb899f',
+                                  'lazySocket': true,
+                                  'themeName': 'prism',
+                                  'botName': 'BEEF IT UGANDA',
+                                  'avatarUrl': 'https://i.pinimg.com/originals/eb/80/35/eb8035fd22531cb9f9188d19ef33582e.jpg',
+                                  'frontendVersion': 'v1',
+                                  'useSessionStorage': true,
+                                  'enableConversationDeletion': true,
+                                  'theme': 'prism',
+                                  'themeColor': '#2563eb',
+                                  'allowedOrigins': [],
+                                  'containerWidth': '100%25',
+                                  'layoutWidth': '100%25',
+                                  'hideWidget': true,
+                                  'showCloseButton': true,
+                                  'disableAnimations': true,
+                                  'closeOnEscape': false,
+                                  'showConversationsButton': true,
+                                  'enableTranscriptDownload': false,
+                                  'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'
+                              });
+                              window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+                            </script>
+                            </body>"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+    </div>
+
+    <footer class="bg-primary py-8">
+        <div class="container mx-auto px-4 text-center text-white">
+            <div class="flex flex-col items-center justify-center mb-4">
+                <p class="text-lg font-semibold mb-2">BEEFIT Uganda</p>
+                <p class="mb-2">A project of the NITA-U Citizen Portal</p>
+                <p class="mb-4">For official inquiries, please contact NITA-U:</p>
+                <a href="https://www.nita.go.ug" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition duration-300">Contact NITA-U</a>
+            </div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="https://www.facebook.com/NITA.Uganda/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition duration-300" aria-label="NITA-U Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/NITAUganda1" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition duration-300" aria-label="NITA-U Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://ug.linkedin.com/company/nita-uganda" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition duration-300" aria-label="NITA-U LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>© 2024 BEEFIT Uganda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html
+
